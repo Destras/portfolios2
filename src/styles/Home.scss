@@ -1,0 +1,90 @@
+@import "../variables";
+
+.homeContainer {
+  overflow: hidden;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  padding-right: 10%;
+}
+
+.homeContainer_content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0px 50px;
+  align-items: center;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+}
+
+.homeContainer_background {
+  position: fixed;
+  height: 200%;
+  width: 100%;
+  -webkit-transform: rotate(-15deg);
+  transform: rotate(-15deg);
+  left: -83%;
+  top: -50%;
+  background-color: $primary;
+  z-index: -1;
+}
+
+.home_imgContainer {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  height: calc(100vh - 80px);
+  border-radius: 30px;
+  left: 40px;
+  top: 40px;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.9);
+  width: 33vw;
+  background-color: rebeccapurple;
+}
+
+// max-width: 473.17px; for smaller devices maybe 1280
+.home_me {
+  max-width: 550px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: relative;
+  margin-right: 150px;
+  @media (max-width: 1366px) {
+    margin-right: 0;
+  }
+}
+
+.home_me::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 29px;
+  height: 4px;
+  width: 40px;
+  border-radius: 10px;
+  background-color: $primary;
+}
+
+.home_me_title {
+  color: $primary;
+  font-size: 51px;
+  line-height: 62px;
+  font-weight: 700;
+  span {
+    color: $font-color;
+  }
+}
+
+.home_me_text {
+  margin: 25px 0 28px;
+  font-size: 16px;
+  line-height: 35px;
+}
+
+
+.home_me_button{
+    align-self: flex-start;
+}

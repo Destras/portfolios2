@@ -1,0 +1,38 @@
+@import "../variables";
+
+.animatedButton {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid $primary;
+  border-radius: 35px;
+  padding-left: 1.5rem;
+  overflow: hidden;
+  font-size: 1rem;
+  position: relative;
+  transition: all 0.3s ease-out;
+}
+.animatedButton::before {
+  content: "";
+  position: absolute;
+  height: 55px;
+  width: 110%;
+  transform: translateX(100%);
+  transition: all 0.3s ease-out;
+  z-index: -1;
+  background-color: $primary;
+}
+.animatedButton:hover:before {
+  transform: translateX(-10%);
+}
+
+.animatedButton_circle {
+  height: 55px;
+  width: 55px;
+  background-color: $primary;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0.8rem;
+}

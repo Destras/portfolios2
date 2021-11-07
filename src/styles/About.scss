@@ -1,0 +1,97 @@
+@import "../variables";
+
+.about_meColour {
+  color: $primary;
+}
+
+.aboutContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.about_personalInfoContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1rem;
+  @media (max-width: 1288px) {
+    flex-direction: column;
+  }
+}
+
+.about_personalInfoContainer_info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @media (max-width: 1288px) {
+    width: 100%;
+  }
+}
+
+.about_personalInfoContainer_info_title {
+  padding-bottom: 22px;
+  font-size: 26px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.about_personalInfoContainer_info_listContainer {
+  flex-grow: 2;
+}
+
+.about_personalInfoContainer_info_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  li {
+    width: 50%;
+    padding-bottom: 20px;
+    display: list-item;
+    font-weight: 500;
+    line-height: 30px;
+    font-size: 1rem;
+  }
+}
+
+.about_personalInfoContainer_info_list_name {
+  text-transform: capitalize;
+  opacity: 0.8;
+}
+
+.about_personalInfoContainer_box {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  @media (max-width: 1288px) {
+    width: 100%;
+  }
+}
+
+.aboutContainer_skills {
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutContainer_skills_title {
+  text-transform: uppercase;
+  font-size: 26px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.aboutContainer_skills_mySkills {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  svg {
+    width: 70px;
+    height: 70px;
+  }
+}

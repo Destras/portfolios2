@@ -1,9 +1,11 @@
 import React from "react";
 import { Switch, Route, BrowserRouter } from "react-router-dom";
 import Layout from "./components/Layout";
+import SideBar from "./components/SideBar";
 import Home from "./containers/Home";
 import About from "./containers/About";
-import SideBar from "./components/SideBar";
+import NotFound from "./containers/NotFound";
+import Portfolios from "./containers/Portfolios";
 
 const Routes = () => {
   return (
@@ -11,9 +13,11 @@ const Routes = () => {
       <Switch>
         <Route exact path="/" component={Home} />
         <Layout>
-          <>
+          <Switch>
             <Route exact path="/about" component={About} />
-          </>
+            <Route exact path="/portfolios" component={Portfolios} />
+            <Route exact component={NotFound} />
+          </Switch>
         </Layout>
       </Switch>
       <SideBar />

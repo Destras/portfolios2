@@ -1,0 +1,12 @@
+@import "../variables";
+
+.works_projectContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.works_titleColor {
+  color: $primary;
+}

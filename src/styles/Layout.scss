@@ -1,9 +1,30 @@
 @import "../variables";
 
+.separator {
+  opacity: 0.25;
+  border-top: 1px solid #252525;
+  margin: 70px auto 55px;
+  width: 40%;
+}
+
 .layout {
-  height: 100vh;
-  width: 100vw;
-  padding: 90px;
+  min-height: 100vh;
+  width: 100%;
+  padding: 90px 0px;
+}
+
+.layout_content {
+  width: 1200px;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  @media (max-width: 1366px) {
+    width: 1100px;
+  }
+
+  @media (max-width: 1288px) {
+    width: 800px;
+  }
 }
 
 // sidebar

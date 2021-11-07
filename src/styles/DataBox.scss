@@ -1,0 +1,45 @@
+@import "../variables";
+
+.dataBoxContainer {
+  padding: 20px 30px 25px 40px;
+  border-radius: 5px;
+  border: 1px solid #252525;
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+}
+
+.dataBoxContainer_number {
+  color: $primary;
+  position: relative;
+  font-size: 3rem;
+  width: fit-content;
+}
+
+.dataBoxContainer_number::before {
+  content: "+";
+  font-size: 1.7rem;
+  position: absolute;
+  top: 2px;
+  right: -15px;
+}
+
+.dataBoxContainer_title {
+  padding-left: 45px;
+  text-transform: uppercase;
+  position: relative;
+  font-size: 15px;
+  :first-child {
+    margin-bottom: 5px;
+  }
+}
+
+.dataBoxContainer_title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 13px;
+  width: 30px;
+  height: 1px;
+  background: #777;
+}

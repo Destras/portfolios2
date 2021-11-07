@@ -11,6 +11,7 @@
   font-size: 1rem;
   position: relative;
   transition: all 0.3s ease-out;
+  width: fit-content;
 }
 .animatedButton::before {
   content: "";
@@ -23,7 +24,7 @@
   background-color: $primary;
 }
 .animatedButton:hover:before {
-  transform: translateX(-10%);
+  transform: translateX(-15%);
 }
 
 .animatedButton_circle {

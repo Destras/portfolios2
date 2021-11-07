@@ -6,7 +6,11 @@ interface ILayout {
 }
 
 const Layout = ({ children }: ILayout) => {
-  return <div className="layout">{children}</div>;
+  return (
+    <div className="layout">
+      <div className="layout_content">{children}</div>
+    </div>
+  );
 };
 
 export default Layout;

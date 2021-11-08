@@ -5,12 +5,12 @@ import AnimatedButton from "../components/AnimatedButton";
 import { Download } from "react-feather";
 import DataBox from "../components/DataBox";
 import Separator from "../components/Separator";
-import HtmlSvg from "../assets/imgs/HtmlSvg";
-import ReactSvg from "../assets/imgs/ReactSvg";
-import ReactRouterDomSvg from "../assets/imgs/ReactRouterDomSvg";
-import SassSvg from "../assets/imgs/SassSvg";
-import JavascriptSvg from "../assets/imgs/JavascriptSvg";
-import ReduxSvg from "../assets/imgs/ReduxSvg";
+import HtmlSvg from "../assets/skillsSvgs/HtmlSvg";
+import ReactSvg from "../assets/skillsSvgs/ReactSvg";
+import ReactRouterDomSvg from "../assets/skillsSvgs/ReactRouterDomSvg";
+import SassSvg from "../assets/skillsSvgs/SassSvg";
+import JavascriptSvg from "../assets/skillsSvgs/JavaScriptSvg";
+import ReduxSvg from "../assets/skillsSvgs/ReduxSvg";
 
 interface IPersonalInfo {
   name: string;

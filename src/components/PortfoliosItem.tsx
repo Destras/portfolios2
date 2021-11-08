@@ -10,6 +10,7 @@ const PortfoliosItem = ({ children, backgroundImg }: IPortfoliosItem) => {
   return (
     <>
       <div className="portfoliosItem_container">
+        <img className='portfoliosItem_img' src={backgroundImg} alt="portfolio background" />
         <div className="portfoliosItem_title">{children}</div>
       </div>
     </>

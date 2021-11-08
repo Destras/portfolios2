@@ -12,14 +12,18 @@
   cursor: pointer;
 }
 
-.portfoliosItem_container::before {
-  content: "";
+@mixin absoluteBox {
   position: absolute;
   border-radius: 5px;
-  background-color: coral;
   width: 100%;
-  transition-duration: 0.5s;
   height: 100%;
+}
+
+.portfoliosItem_container::before {
+  content: "";
+  @include absoluteBox;
+  background-color: coral;
+  transition-duration: 0.5s;
   opacity: 0;
   z-index: 2;
 }
@@ -27,6 +31,8 @@
 .portfoliosItem_container:hover:before {
   opacity: 1;
 }
+
+
 
 .portfoliosItem_title {
   opacity: 0;
@@ -46,4 +52,5 @@
 }
 
 .portfoliosItem_img {
+  @include absoluteBox;
 }

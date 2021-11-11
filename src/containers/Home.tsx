@@ -18,7 +18,7 @@ const Home = () => {
         <div className="home_imgContainer" />
         <div className="home_me">
           <h1 className="home_me_title">
-            I'M JUAN IGNACIO <br /> WERKALEC.
+            I'M JUAN IGNACIO <br /> WERKALEC
             <br />
             <span>WEB DEVELOPER</span>
           </h1>

@@ -32,8 +32,6 @@
   opacity: 1;
 }
 
-
-
 .portfoliosItem_title {
   opacity: 0;
   z-index: 10;
@@ -53,4 +51,38 @@
 
 .portfoliosItem_img {
   @include absoluteBox;
+}
+
+.portfoliosItem_modal_header {
+  font-size: 4rem;
+  width: 100%;
+  color: $primary;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.portfoliosItem_modal_body {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.portfoliosItem_modal_body > * {
+  width: 50%;
+  padding: 5px 0px;
+}
+.portfoliosItem_modal_body > *:nth-child(even) {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.portfoliosItem_modal_imgContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  img {
+    width: 500px;
+    height: 266px;
+    object-fit: cover;
+  }
 }

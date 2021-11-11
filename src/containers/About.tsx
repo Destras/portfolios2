@@ -11,6 +11,7 @@ import ReactRouterDomSvg from "../assets/skillsSvgs/ReactRouterDomSvg";
 import SassSvg from "../assets/skillsSvgs/SassSvg";
 import JavascriptSvg from "../assets/skillsSvgs/JavaScriptSvg";
 import ReduxSvg from "../assets/skillsSvgs/ReduxSvg";
+import FirebaseSvg from "../assets/skillsSvgs/FirebaseSvg";
 
 interface IPersonalInfo {
   name: string;
@@ -89,6 +90,7 @@ const About = () => {
           <SassSvg />
           <JavascriptSvg />
           <ReduxSvg />
+          <FirebaseSvg />
         </div>
       </div>
     </div>

@@ -15,13 +15,29 @@ const Portfolios = () => {
         </span>
       </Title>
       <div className="works_projectContainer">
-        <PortfoliosItem backgroundImg={opgg}>
+        <PortfoliosItem
+          webVisibleLink={"opjj.herokuapp.com"}
+          webUrl="https://opjj.herokuapp.com/"
+          technologyStack="React, Express"
+          backgroundImg={opgg}
+          originalBewSite="op.gg"
+        >
           <span>project op.gg</span>
         </PortfoliosItem>
-        <PortfoliosItem backgroundImg={mercadojuan}>
+        <PortfoliosItem
+          webVisibleLink={"mercadojuan-cf065.web.app"}
+          webUrl="https://mercadojuan-cf065.web.app/"
+          technologyStack="React, Firebase"
+          backgroundImg={mercadojuan}
+        >
           <span>MercadoJuan</span>
         </PortfoliosItem>
-        <PortfoliosItem backgroundImg={lava}>
+        <PortfoliosItem
+          webUrl="https://www.google.com/search?q=lava&sxsrf=AOaemvKcgqWM7P25ObUaYHvWj8qQmpvizA:1636586667449&source=lnms&tbm=isch&sa=X&ved=2ahUKEwi929O3-I70AhVCrZUCHdkKA4kQ_AUoAXoECAEQAw&biw=1920&bih=912&dpr=1"
+          webVisibleLink={"lavaStock"}
+          technologyStack="Rocks, Heat"
+          backgroundImg={lava}
+        >
           <span>Lava Stock</span>
         </PortfoliosItem>
       </div>

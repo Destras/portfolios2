@@ -9,7 +9,7 @@ const SideBar = () => {
     <div className="sidebar-container">
       <SideBarButton to="/" title='Home' Icon={Home} />
       <SideBarButton to="/about" title='About' Icon={User} />
-      <SideBarButton to="/portfolios" title='Portfolios' Icon={Briefcase} />
+      <SideBarButton to="/portfolio" title='Portfolio' Icon={Briefcase} />
     </div>
   );
 };

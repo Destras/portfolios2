@@ -6,6 +6,7 @@ import Home from "./containers/Home";
 import About from "./containers/About";
 import NotFound from "./containers/NotFound";
 import Portfolios from "./containers/Portfolios";
+import Contact from "./containers/Contact";
 
 const Routes = () => {
   return (
@@ -16,7 +17,8 @@ const Routes = () => {
           <Switch>
             <Route exact path="/about" component={About} />
             <Route exact path="/portfolio" component={Portfolios} />
-            <Route exact component={NotFound} />
+            <Route exact path="/contact" component={Contact} />
+            <Route component={NotFound} />
           </Switch>
         </Layout>
       </Switch>

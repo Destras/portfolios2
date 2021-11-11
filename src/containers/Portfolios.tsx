@@ -20,7 +20,7 @@ const Portfolios = () => {
           webUrl="https://opjj.herokuapp.com/"
           technologyStack="React, Express"
           backgroundImg={opgg}
-          originalBewSite="op.gg"
+          originalBewSite="https://op.gg/"
         >
           <span>project op.gg</span>
         </PortfoliosItem>

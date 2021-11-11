@@ -12,6 +12,7 @@ import SassSvg from "../assets/skillsSvgs/SassSvg";
 import JavascriptSvg from "../assets/skillsSvgs/JavaScriptSvg";
 import ReduxSvg from "../assets/skillsSvgs/ReduxSvg";
 import FirebaseSvg from "../assets/skillsSvgs/FirebaseSvg";
+import styledComponentsPng from '../assets/skillsSvgs/styled-components.png'
 
 interface IPersonalInfo {
   name: string;
@@ -91,6 +92,7 @@ const About = () => {
           <JavascriptSvg />
           <ReduxSvg />
           <FirebaseSvg />
+          <img src={styledComponentsPng} alt="" />
         </div>
       </div>
     </div>

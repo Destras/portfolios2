@@ -3,7 +3,7 @@
 .portfoliosItem_container {
   width: 30%;
   aspect-ratio: 8 / 5;
-  background-color: royalblue;
+  background-color: $background-secondary;
   position: relative;
   border-radius: 5px;
   display: flex;
@@ -22,7 +22,7 @@
 .portfoliosItem_container::before {
   content: "";
   @include absoluteBox;
-  background-color: coral;
+  background-color: $primary;
   transition-duration: 0.5s;
   opacity: 0;
   z-index: 2;

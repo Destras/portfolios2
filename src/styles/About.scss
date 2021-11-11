@@ -86,11 +86,13 @@
 
 .aboutContainer_skills_mySkills {
   width: 100%;
+  gap: 10px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  svg {
+  svg, img {
+    margin: 0px 30px;
     width: 70px;
     height: 70px;
   }

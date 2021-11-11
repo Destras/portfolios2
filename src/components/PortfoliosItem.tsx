@@ -47,8 +47,8 @@ const PortfoliosItem = ({
             {originalBewSite && (
               <span>
                 Original bewSite:&nbsp;
-                <a href={webUrl} target="_blank">
-                  {webVisibleLink}
+                <a href={originalBewSite} target="_blank">
+                  {originalBewSite}
                 </a>
               </span>
             )}

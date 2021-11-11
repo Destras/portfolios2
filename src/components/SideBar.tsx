@@ -1,6 +1,6 @@
 import React from "react";
 import SideBarButton from "./SideBarButton";
-import { Home, User, Briefcase } from "react-feather";
+import { Home, User, Briefcase, Mail } from "react-feather";
 
 import "../styles/Layout.scss";
 
@@ -10,6 +10,7 @@ const SideBar = () => {
       <SideBarButton to="/" title='Home' Icon={Home} />
       <SideBarButton to="/about" title='About' Icon={User} />
       <SideBarButton to="/portfolio" title='Portfolio' Icon={Briefcase} />
+      <SideBarButton to="/contact" title='Portfolio' Icon={Mail} />
     </div>
   );
 };

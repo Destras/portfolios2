@@ -12,7 +12,8 @@ import SassSvg from "../assets/skillsSvgs/SassSvg";
 import JavascriptSvg from "../assets/skillsSvgs/JavaScriptSvg";
 import ReduxSvg from "../assets/skillsSvgs/ReduxSvg";
 import FirebaseSvg from "../assets/skillsSvgs/FirebaseSvg";
-import styledComponentsPng from '../assets/skillsSvgs/styled-components.png'
+import styledComponentsPng from "../assets/skillsSvgs/styled-components.png";
+import Cf from "../assets/cv.pdf";
 
 interface IPersonalInfo {
   name: string;
@@ -30,7 +31,7 @@ const personalInfo: IPersonalInfo[] = [
 const About = () => {
   const onCVDownload = () => {
     var element = document.createElement("a");
-    element.setAttribute("href", encodeURIComponent("src/assets/cv.pdf"));
+    element.setAttribute("href", Cf);
     element.setAttribute(
       "download",
       "Curriculum Vitae Juan Ignacio Werkalec.pdf"

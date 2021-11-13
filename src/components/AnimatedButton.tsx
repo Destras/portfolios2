@@ -1,10 +1,10 @@
-import React, { FunctionComponent } from "react";
+import React, { FunctionComponent, SyntheticEvent } from "react";
 import { IconProps } from "react-feather";
 import "../styles/AnimatedButton.scss";
 
 interface IAnimatedButton {
   children: JSX.Element;
-  onClick: (e?: any) => void;
+  onClick: (e?: SyntheticEvent<any>) => void;
   Icon: FunctionComponent<IconProps>;
   type?: "button" | "submit" | "reset";
 }

@@ -18,11 +18,11 @@ const Contact = () => {
     setLoading();
 
     sendEmail(form)
-      .then((response) => {
+      .then(() => {
         form.current.reset();
         setSuccess();
       })
-      .catch((e) => setRejected());
+      .catch(() => setRejected());
   };
 
   return (

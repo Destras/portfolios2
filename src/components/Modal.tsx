@@ -1,4 +1,4 @@
-import React from "react";
+import React, { MouseEvent, SyntheticEvent } from "react";
 import "../styles/Modal.scss";
 import { XCircle } from "react-feather";
 

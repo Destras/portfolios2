@@ -4,7 +4,7 @@ import Modal from "./Modal";
 
 interface IPortfoliosItem {
   children: JSX.Element;
-  backgroundImg: any;
+  backgroundImg: string;
   webUrl: string;
   technologyStack: string;
   originalBewSite?: string;

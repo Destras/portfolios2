@@ -7,22 +7,25 @@ import About from "./containers/About";
 import NotFound from "./containers/NotFound";
 import Portfolios from "./containers/Portfolios";
 import Contact from "./containers/Contact";
+import AnimatedRoute from "./components/AnimatedRoute";
 
 const Routes = () => {
   return (
     <BrowserRouter>
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Layout>
-          <Switch>
-            <Route exact path="/about" component={About} />
-            <Route exact path="/portfolio" component={Portfolios} />
-            <Route exact path="/contact" component={Contact} />
-            <Route component={NotFound} />
-          </Switch>
-        </Layout>
-      </Switch>
-      <SideBar />
+      <div className="overflowHidden">
+        <Switch>
+          <AnimatedRoute exact path="/" component={Home} />
+          <Layout>
+            <Switch>
+              <AnimatedRoute exact path="/about" component={About} />
+              <AnimatedRoute exact path="/portfolio" component={Portfolios} />
+              <AnimatedRoute exact path="/contact" component={Contact} />
+              <AnimatedRoute component={NotFound} />
+            </Switch>
+          </Layout>
+        </Switch>
+        <SideBar />
+      </div>
     </BrowserRouter>
   );
 };

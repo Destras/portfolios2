@@ -4,13 +4,14 @@ import "../styles/AnimatedButton.scss";
 
 interface IAnimatedButton {
   children: JSX.Element;
-  onClick: () => void;
+  onClick: (e?: any) => void;
   Icon: FunctionComponent<IconProps>;
+  type?: "button" | "submit" | "reset";
 }
 
-const AnimatedButton = ({ children, onClick, Icon }: IAnimatedButton) => {
+const AnimatedButton = ({ children, onClick, Icon, type }: IAnimatedButton) => {
   return (
-    <button className="animatedButton" onClick={onClick}>
+    <button type={type} className="animatedButton" onClick={onClick}>
       {children}
       <div className="animatedButton_circle">
         <Icon />

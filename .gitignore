@@ -75,4 +75,5 @@ yarn-error.log
 # Build
 dist/
 
-.env
+# emailjs secret keys
+src/service/config.ts

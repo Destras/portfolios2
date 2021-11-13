@@ -1,0 +1,43 @@
+@import "../variables";
+
+@mixin inputBox {
+  border: 1px solid $background-primary;
+  width: 100%;
+  background: $background-secondary;
+  color: #fff;
+  outline: none !important;
+  transition: 0.3s;
+  padding: 11px 26px;
+  border-radius: 30px;
+}
+
+.input {
+  @include inputBox;
+  height: 48px;
+}
+
+.input:focus {
+  border: 1px solid $primary;
+}
+
+.input,
+.input::-webkit-input-placeholder {
+  font-size: 15px;
+}
+
+.textArea {
+  @include inputBox;
+
+  height: 200px;
+  overflow: hidden;
+  resize: vertical;
+}
+
+.textArea:focus {
+  border: 1px solid $primary;
+}
+
+.textArea,
+.textArea ::-webkit-textarea-placeholder {
+  font-size: 18px;
+}

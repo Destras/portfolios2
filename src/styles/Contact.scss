@@ -27,4 +27,21 @@
 
 .contact_formContainer {
   width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+.marginBottom {
+  margin-bottom: 30px;
+}
+
+.contact_formContainer_nameEmail {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  div {
+    width: 50%;
+  }
+}
+
+.contact_formContainer_nameEmail_sendButton {
 }

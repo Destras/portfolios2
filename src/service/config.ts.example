@@ -1,0 +1,8 @@
+// im using firebase for hoisting and i dont want to configure env variables
+
+// emailjs keys
+export const emailConfig = {
+  userId: "",
+  serviceId: "",
+  templateId: "",
+};

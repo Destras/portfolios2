@@ -1,0 +1,68 @@
+@import "../variables";
+
+.toast {
+  position: fixed;
+  bottom: 10%;
+  right: 0px;
+  border: 1px solid #111;
+  width: fit-content;
+  background: $background-secondary-transparent;
+  color: white;
+  outline: none !important;
+  padding: 11px 5px;
+  font-size: 14px;
+  height: 54px;
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  animation-name: appear;
+  animation-duration: 0.5s;
+}
+.toast_success {
+  color: $success;
+}
+.toast_error {
+  color: $error;
+}
+
+.toast_img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+@keyframes appear {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+
+.toast_loadingSpinner {
+  display: inline-block;
+}
+.toast_loadingSpinner:after {
+  content: " ";
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin: 4px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: loadingSpinnerAnimation 1.2s linear infinite;
+}
+
+@keyframes loadingSpinnerAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

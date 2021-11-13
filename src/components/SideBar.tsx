@@ -10,7 +10,7 @@ const SideBar = () => {
       <SideBarButton to="/" title='Home' Icon={Home} />
       <SideBarButton to="/about" title='About' Icon={User} />
       <SideBarButton to="/portfolio" title='Portfolio' Icon={Briefcase} />
-      <SideBarButton to="/contact" title='Portfolio' Icon={Mail} />
+      <SideBarButton to="/contact" title='Contact' Icon={Mail} />
     </div>
   );
 };

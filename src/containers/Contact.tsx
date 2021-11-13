@@ -1,32 +1,33 @@
-import React, { useRef, useState } from "react";
+import React, { SyntheticEvent, useRef, useState } from "react";
 import "../styles/Contact.scss";
 import Title from "../components/Title";
 import Input, { TextArea } from "../components/Input";
 import AnimatedButton from "../components/AnimatedButton";
 import { Send } from "react-feather";
 import { sendEmail } from "../service/email";
-
-enum statusState {
-  WAITING = "WAITING",
-  LOADING = "LOADING",
-  SUCCESS = "SUCCESS",
-  REJECTED = "REJECTED",
-}
+import Toast from "../components/Toast";
+import useStatus, { statusState } from "../customHooks/useStatus";
 
 const Contact = () => {
-  const form = useRef();
-  const [status, setStatus] = useState<statusState>(statusState.WAITING);
+  const form = useRef<HTMLFormElement>();
 
-  const handleSendForm = (e: any) => {
+  const { status, setLoading, setRejected, setSuccess } = useStatus();
+
+  const handleSendForm = (e: SyntheticEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setLoading();
 
     sendEmail(form)
-      .then((response) => console.log(response))
-      .catch((e) => console.log(e));
+      .then((response) => {
+        form.current.reset();
+        setSuccess();
+      })
+      .catch((e) => setRejected());
   };
 
   return (
     <div>
+      <Toast status={status} />
       <Title subTitle="CONTACT">
         <span>
           GET IN <span className="contact_meColour">TOUCH</span>
@@ -55,10 +56,10 @@ const Contact = () => {
           </div>
 
           <div className="marginBottom">
-            <Input placeholder="YOUR SUBJECT" name="subject" />
+            <Input placeholder="SUBJECT" name="subject" />
           </div>
           <div className="marginBottom">
-            <TextArea placeholder="YOUR MESSAGE" name="message" />
+            <TextArea placeholder="MESSAGE" name="message" />
           </div>
           <div className="contact_formContainer_nameEmail_sendButton">
             <AnimatedButton onClick={handleSendForm} Icon={Send}>

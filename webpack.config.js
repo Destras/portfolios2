@@ -48,6 +48,10 @@ module.exports = {
           },
         ],
       },
+      {
+        test: /\.(woff2|woff)$/,
+        loader: "url-loader?limit=100000",
+      },
     ],
   },
   devServer: {

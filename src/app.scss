@@ -14,6 +14,7 @@
 body {
   background-color: $background-primary;
   margin: 0px;
+  font-family: "Roboto Regular";
   color: $font-color;
 }
 
@@ -27,6 +28,7 @@ h3,
 h4,
 h5,
 h6 {
+  font-family: "Roboto Bold";
   padding: 0px;
   margin: 0px;
 }
@@ -46,10 +48,26 @@ ul {
   list-style: none;
 }
 
-a{
+a {
   color: $primary;
 }
 
-.overflowHidden{
+.overflowHidden {
   overflow: hidden;
+}
+
+@font-face {
+  font-family: "Roboto Bold";
+  src: url("./assets/fonts/roboto-bold-webfont.woff2") format("woff2"),
+    url("./assets/fonts/roboto-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto Regular";
+  src: url("./assets/fonts/roboto-regular-webfont.woff2") format("woff2"),
+    url("./assets/fonts/roboto-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }

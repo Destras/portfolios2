@@ -69,13 +69,15 @@
 
 .sideBarButton-title {
   background-color: $background-secondary;
+  font-family: "Roboto Regular";
   z-index: -1;
   position: absolute;
   top: 0;
   right: 0;
   opacity: 0;
   color: $font-color;
-  font-size: 1rem;
+  letter-spacing: 2px;
+  font-size: 15px;
   line-height: 50px;
   font-weight: 500;
   transition: all 0.3s;

@@ -7,12 +7,14 @@
   border: 1px solid $primary;
   border-radius: 35px;
   padding-left: 1.5rem;
+  -ms-overflow-style: none; /* IE 11 */
+  scrollbar-width: none; /* Firefox 64 */
   overflow: hidden;
   font-size: 15px;
   position: relative;
   transition: all 0.3s ease-out;
   width: fit-content;
-  font-family: 'Roboto Bold';
+  font-family: "Roboto Bold";
 }
 .animatedButton::before {
   content: "";

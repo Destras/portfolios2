@@ -43,5 +43,21 @@
   }
 }
 
-.contact_formContainer_nameEmail_sendButton {
+.socialNetworkLinkButton {
+  width: 40px;
+  height: 40px;
+  background-color: $background-secondary;
+  color: $font-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: 0.3s;
+  svg {
+    width: 1rem;
+  }
+}
+
+.socialNetworkLinkButton:hover {
+  background-color: $primary;
 }

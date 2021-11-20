@@ -36,6 +36,9 @@
   font-size: 26px;
   font-weight: 600;
   text-transform: uppercase;
+  @media ($mobile) {
+    font-size: 1.5rem;
+  }
 }
 
 .about_personalInfoContainer_info_listContainer {
@@ -53,6 +56,20 @@
     font-weight: 500;
     line-height: 30px;
     font-size: 1rem;
+  }
+  @media (max-width: 1288px) {
+    li:nth-of-type(even) {
+      text-align: right;
+    }
+  }
+
+  @media ($mobile) {
+    li {
+      display: flex;
+      flex-direction: column;
+      font-size: 14px;
+      text-align: left;
+    }
   }
 }
 
@@ -75,6 +92,9 @@
 .aboutContainer_skills {
   display: flex;
   flex-direction: column;
+  @media ($mobile) {
+    margin-top: 20px;
+  }
 }
 
 .aboutContainer_skills_title {

@@ -5,12 +5,19 @@
   border-top: 1px solid #252525;
   margin: 70px auto 55px;
   width: 40%;
+  @media ($mobile) {
+    display: none;
+  }
 }
 
 .layout {
   min-height: 100vh;
   width: 100%;
   padding: 90px 0px;
+  @media ($mobile) {
+    padding: 16px 15px;
+    padding-bottom: 76px;
+  }
 }
 
 .layout_content {
@@ -25,6 +32,11 @@
   @media (max-width: 1288px) {
     width: 800px;
   }
+
+  @media ($mobile) {
+    width: 100%;
+    margin: 0px;
+  }
 }
 
 // sidebar
@@ -32,11 +44,22 @@
 .sidebar-container {
   position: fixed;
   right: 30px;
-  top: 50%;
-  transform: translateY(-50%);
+  bottom: 50%;
+  transform: translateY(50%);
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+
+  @media (max-width: 480px) {
+    flex-direction: row;
+    background-color: $background-secondary;
+    bottom: 0px;
+    right: 0px;
+    transform: translateY(0px);
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 8px;
+  }
 }
 
 .sideBatButton {
@@ -49,6 +72,11 @@
   justify-content: center;
   align-items: center;
   position: relative;
+  @media (max-width: 480px) {
+    width: 45px;
+    height: 45px;
+    background-color: $background-secondary-mobile;
+  }
 }
 
 .sideBatButton:hover {
@@ -86,4 +114,7 @@
   padding: 0 45px 0 30px;
   height: 50px;
   margin: 0;
+  @media (max-width: 480px) {
+    display: none;
+  }
 }

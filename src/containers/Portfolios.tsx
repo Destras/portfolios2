@@ -3,7 +3,7 @@ import "../styles/Portfolios.scss";
 import Title from "../components/Title";
 import PortfoliosItem from "../components/PortfoliosItem";
 import opgg from "../assets/portFolioImgs/op-gg1.png";
-import mercadojuan from "../assets/portFolioImgs/mercadojuan1.jpg";
+import portfolios from "../assets/portFolioImgs/portfolios.png";
 import lava from "../assets/portFolioImgs/lava.jpg";
 
 const Portfolios = () => {
@@ -25,12 +25,12 @@ const Portfolios = () => {
           <span>project op.gg</span>
         </PortfoliosItem>
         <PortfoliosItem
-          webVisibleLink={"mercadojuan-cf065.web.app"}
-          webUrl="https://mercadojuan-cf065.web.app/"
-          technologyStack="React, Firebase"
-          backgroundImg={mercadojuan}
+          webVisibleLink={"juaniw.com"}
+          webUrl="https://juaniw.com/"
+          technologyStack="React"
+          backgroundImg={portfolios}
         >
-          <span>MercadoJuan</span>
+          <span>My portfolio</span>
         </PortfoliosItem>
         <PortfoliosItem
           webUrl="https://www.google.com/search?q=lava&sxsrf=AOaemvKcgqWM7P25ObUaYHvWj8qQmpvizA:1636586667449&source=lnms&tbm=isch&sa=X&ved=2ahUKEwi929O3-I70AhVCrZUCHdkKA4kQ_AUoAXoECAEQAw&biw=1920&bih=912&dpr=1"

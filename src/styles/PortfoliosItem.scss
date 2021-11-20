@@ -10,7 +10,12 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  @media ($mobile) {
+    width: 100%;
+  }
 }
+
+
 
 @mixin absoluteBox {
   position: absolute;

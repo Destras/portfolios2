@@ -9,7 +9,12 @@ interface IAnimatedButton {
   type?: "button" | "submit" | "reset";
 }
 
-const AnimatedButton = ({ children, onClick, Icon, type }: IAnimatedButton) => {
+const AnimatedButton = ({
+  children,
+  onClick,
+  Icon,
+  type = "button",
+}: IAnimatedButton) => {
   return (
     <button type={type} className="animatedButton" onClick={onClick}>
       {children}

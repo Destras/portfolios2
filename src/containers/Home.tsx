@@ -15,10 +15,9 @@ const Home = () => {
     <div className="homeContainer">
       <div className="homeContainer_background" />
       <div className="homeContainer_content">
-        <div className="home_imgContainer" />
         <div className="home_me">
           <h1 className="home_me_title">
-            I'M JUAN IGNACIO <br /> WERKALEC
+            I'M JUAN IGNACIO WERKALEC
             <br />
             <span>WEB DEVELOPER</span>
           </h1>

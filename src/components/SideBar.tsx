@@ -7,10 +7,10 @@ import "../styles/Layout.scss";
 const SideBar = () => {
   return (
     <div className="sidebar-container">
-      <SideBarButton to="/" title='Home' Icon={Home} />
-      <SideBarButton to="/about" title='About' Icon={User} />
-      <SideBarButton to="/portfolio" title='Portfolio' Icon={Briefcase} />
-      <SideBarButton to="/contact" title='Contact' Icon={Mail} />
+      <SideBarButton id='sidebarButton-home' to="/" title='Home' Icon={Home} />
+      <SideBarButton id='sidebarButton-about' to="/about" title='About' Icon={User} />
+      <SideBarButton id='sidebarButton-portfolios' to="/portfolio" title='Portfolio' Icon={Briefcase} />
+      <SideBarButton id='sidebarButton-contact' to="/contact" title='Contact' Icon={Mail} />
     </div>
   );
 };

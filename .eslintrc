@@ -12,7 +12,8 @@
           "extensions": [
             ".js",
             ".ts",
-            ".tsx"
+            ".tsx",
+            ".jsx"
           ]
         }
       ],

@@ -7,20 +7,20 @@ interface ISideBarButton {
   to: string;
   title: string;
   Icon: FunctionComponent<IconProps>;
+  id?: string;
 }
-const SideBarButton = ({ to, Icon, title }: ISideBarButton) => {
+const SideBarButton = ({ to, Icon, title, id }: ISideBarButton) => {
   return (
-    <div>
-      <NavLink
-        exact={true}
-        className="sideBatButton"
-        activeClassName="sideBatButton-active"
-        to={to}
-      >
-        {<Icon />}
-        <h2 className="sideBarButton-title">{title}</h2>
-      </NavLink>
-    </div>
+    <NavLink
+      id={id}
+      exact
+      className="sideBatButton"
+      activeClassName="sideBatButton-active"
+      to={to}
+    >
+      {<Icon />}
+      <h2 className="sideBarButton-title">{title}</h2>
+    </NavLink>
   );
 };
 

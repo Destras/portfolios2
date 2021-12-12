@@ -18,8 +18,6 @@ describe("<AnimatedButton /> tests", () => {
     expect(wrapper.contains(<div className="unique" />)).toEqual(true);
 
     expect(wrapper.prop("onClick")).toBe(mockCallBack);
-    
-    expect(wrapper.prop("type")).toBe("button");
   });
 
   it("Checking if button works", () => {

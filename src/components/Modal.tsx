@@ -1,10 +1,6 @@
-import React, { MouseEvent, SyntheticEvent } from "react";
+import React from "react";
 import "../styles/Modal.scss";
 import { XCircle } from "react-feather";
-
-const clickedOutsideOfModal = (e: any, fatherClassName: string): boolean => {
-  return e.target.className === fatherClassName;
-};
 
 interface IModal {
   isOpen?: boolean;
@@ -14,15 +10,15 @@ interface IModal {
 
 const Modal = ({ isOpen, toggleModal, children }: IModal) => {
   const handleClick = (e: any) =>
-    clickedOutsideOfModal(e, "modal_relative") && toggleModal();
+    (e.target.id = "modalRelative" && toggleModal());
 
   return (
     isOpen && (
-      <div onClick={handleClick} className="modal_container">
-        <div className="modal_relative">
-          <div className="modal_body">
+      <div className="modal_container">
+        <div onClick={handleClick} id="modalRelative" className="modal_relative">
+          <div id="modal" className="modal_body">
             <div className="modal_close">
-              <XCircle onClick={toggleModal} />
+              <XCircle id='modalCloseButton' onClick={toggleModal} />
             </div>
             <div>{children}</div>
           </div>
